@@ -1,0 +1,59 @@
+# Dependências Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Compilação nativa e cache (TensorFlow / node-gyp)
+build/
+*.node
+.npm/
+
+# Builds e transpilação (TypeScript / JS)
+dist/
+out/
+.next/
+
+# Python (caso utilize scripts auxiliares ou notebooks na pós)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Variáveis de ambiente e chaves de API (OpenAI, Gemini, HuggingFace, etc.)
+.env
+.env.local
+.env.*.local
+
+# Modelos treinados e datasets pesados (evita travar o push no GitHub)
+*.bin
+*.onnx
+*.pt
+*.pth
+*.h5
+*.safetensors
+*.weights
+models/
+datasets/
+
+# Logs e dados temporários
+logs/
+*.log
+tmp/
+temp/
+
+# Sistema Operacional (Windows e Linux/WSL)
+Thumbs.db
+Desktop.ini
+.DS_Store
+*:Zone.Identifier
+
+# IDEs e Editores (mantém apenas configurações úteis se desejar)
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
